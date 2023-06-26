@@ -1,0 +1,52 @@
+.featuredProducts {
+    padding: 60px 0px;
+    // background-color: bisque;
+    background-color: white;
+    
+  
+    .top {
+      display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    background-color: aliceblue;
+  
+      h1 {
+        font-size: 46px;
+        line-height: 54px;
+        color: #c49949;
+      }
+  
+      
+    }
+  
+    .bottom{
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+@media (max-width: 799px) {
+  .featuredProducts{
+    padding: 0px;
+    .top{
+      
+       h1{
+        font-size: 30px;
+        line-height:  40px; ;
+        text-align: center;
+       }
+    }
+    .bottom{
+
+    }
+  }
+}
+
+
+
+  
+  
