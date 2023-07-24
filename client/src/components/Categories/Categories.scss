@@ -21,7 +21,9 @@
 
 .categories{
     display:flex ;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     // padding-top: 20px;
     flex-wrap:wrap;
     // background-color: bisque;
@@ -59,7 +61,7 @@
 .des{
         display: flex;
         justify-content: center;
-        text-align: start;
+        align-items: center;
         padding: 5px 0;
         
         h4{

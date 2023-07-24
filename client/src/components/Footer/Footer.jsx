@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.scss";
+import { Link } from 'react-router-dom';
 
  const Footer = () => {
   return (
@@ -8,7 +9,7 @@ import "./Footer.scss";
        
        
         <div className="item">
-        <h1>Best Jewellery Shop in Ahmedabad</h1>
+        <h1>Best Jewellery Shop in USA</h1>
         <span>The Jewellery collection that reflects its classic cuts, uniqueness, and exquisite design, offered with promise of trust and quality. Customer's satisfaction is paramount to our successful enterprise. To buy gold jewelry at best prices, contact us today!</span>
         
         <div className='logo'>
@@ -32,6 +33,11 @@ import "./Footer.scss";
           <span className="copyright">
             © Copyright 2023. All Rights Reserved
           </span>
+          <Link to='/privacypolicy' target="_blank">
+          <h4 className="policy">
+          Privacy policy
+          </h4>
+          </Link>
        
       </div>
     </div>

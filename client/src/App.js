@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.scss";
 import Contact from "./components/Contact/Contact";
 import Collection from "./pages/Collection/Collection";
+import Privacy from "./components/Privacy/Privacy";
 
 const Layout = () => {
 return(
@@ -42,7 +43,11 @@ const router = createBrowserRouter([
       },{
         path: "/products",
         element:<Collection/>
-      }
+    },{
+      path: "/privacypolicy",
+      element:<Privacy/>
+    }
+
     ]
   },
   

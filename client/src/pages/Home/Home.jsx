@@ -6,7 +6,8 @@ import Banner from '../../components/Banner/Banner'
 import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts'
 import Banner1 from '../../components/Banner1/Banner1'
 import Landing from '../../components/Landing/Landing'
-// import Contact from '../../components/Contactus/Contactus'
+import Contactus from '../../components/Contactus/Contactus'
+import Whatsapp from '../../components/Whatsapp/Whatsapp'
 
 const Home = () => {
   return (
@@ -19,7 +20,8 @@ const Home = () => {
       <Banner img="/img/b1.jpg"/>
       <FeaturedProducts type="Trending"/>
       <Banner img="/img/b2.jpg"/>
-      {/* <Contact/> */}
+       <Contactus/>
+       <Whatsapp/>
     </div>
   )
 }

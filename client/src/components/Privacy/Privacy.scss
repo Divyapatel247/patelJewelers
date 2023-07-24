@@ -1,0 +1,27 @@
+.privacy{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    width: 100%;
+    .policy{
+    text-align: center;
+    width: 50%;
+    margin: 10px 0px;
+    h1{
+        color: #6f1a07;
+    }
+    h3{
+        
+    }
+}
+}
+
+@media (max-width: 799px) {
+    .privacy{
+
+        .policy{
+           width: 80%;
+        }
+    }
+}

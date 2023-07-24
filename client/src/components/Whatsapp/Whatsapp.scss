@@ -1,0 +1,22 @@
+.whatsapp{
+    position:fixed;
+    bottom: 10px ;
+    right: 10px;
+    a{
+        img{
+            width: 4vw;
+            height: 5vh;
+          }
+    }
+}
+
+@media (max-width: 799px) {
+    .whatsapp{
+        a{
+            img{
+                width: 14vw;
+                height: 9vh;
+              }
+        }
+    }
+}

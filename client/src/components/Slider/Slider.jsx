@@ -8,8 +8,8 @@ const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const data = [
         "/img/slider/1.png",
-        "/img/slider/2.jpg",
-        "/img/3.jpg",
+        "/img/slider/2.png",
+        "/img/slider/3.png",
       ];
 
     const prevSlide = () =>{
@@ -30,9 +30,9 @@ const Slider = () => {
   return (
     <div className='slider'>
       <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
-        <img src={data[0]} alt="" />
-        <img src={data[1]} alt="" />
         <img src={data[2]} alt="" />
+        <img src={data[1]} alt="" />
+        <img src={data[0]} alt="" />
      </div>
      {/* <div className='icons'> */}
         {/* <div className="icon" onClick={prevSlide}>

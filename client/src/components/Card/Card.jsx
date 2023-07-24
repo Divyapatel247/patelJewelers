@@ -27,7 +27,10 @@ const Card = ({item}) => {
         <div className="des">
           <span>{item?.attributes.desc}</span>
           <h5>{item?.attributes.title}</h5>
-          <h4>{item?.attributes.weight} gm</h4>
+          <div className="info">
+          <h4>{item?.attributes.weight} gm -</h4>
+          <h4>{item?.attributes.price} $</h4>
+          </div>
         </div>
       </div>
     </Link>
