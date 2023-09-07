@@ -4,24 +4,41 @@
   flex-direction:row;
  background-color: white;
 
+ .menu{
+
   .left {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
     position: sticky;
-    height: 100%;
+    // height: 100%;
     top: 100px;
+
+    .filter{
+     visibility:collapse;
+     height: 0%;
+      .closeicon{
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color:#9f394b;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.8rem;
+      }
+    }
 
 
     .filterItem{
       margin-bottom: 30px;
-      
+       
 
       #Gold {
         color: gold;
       }
-      #Rosegold {
+      #RoseGold {
         color: rosybrown;
       }
 
@@ -29,6 +46,7 @@
         font-weight: 400;
         margin-bottom: 20px;
       }
+      .box{
 
       .inputItem{
         margin-bottom: 10px;
@@ -44,7 +62,35 @@
         }
       }
     }
+    }
+    .apply{
+      width: 250px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #2879fe;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+    }
   }
+  .filtericon{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #c49949;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+    height: 0%;
+  }
+ 
+}
   
   .right {
     flex: 4;
@@ -76,17 +122,73 @@
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+
+    .menu{
+
+    
   
     .left {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: row;
-      justify-content: space-between;
-      position:static;
-      padding: 20px;
-  
+      // display: flex;
+      // align-items: flex-start;
+      // flex-direction: row;
+      // justify-content: space-between;
+      // position:static;
+      // padding: 20px;
+      position: fixed;
+      top: -94vh;
+  left: 0;
+      // top: 0;
+      // right: -200px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+      background-color: white;
+  padding: 40px 10px;
+  gap: 1.5rem;
+  transition: 1s;
+      z-index: 99;
+
+      .filter{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 30px;
+
+        .closeicon{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      .filterItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .inputItem{
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
       
     }
+
+    .filtericon{
+      visibility: visible;
+      opacity: 1;
+      height: 30px;
+      margin-left: 10px;
+      margin-top: 2px;
+    }
+    
+
+  }
+  .responsive_nav {    
+    transform: translateY(100vh);
+}
     
     .right {
       

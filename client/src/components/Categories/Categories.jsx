@@ -54,14 +54,14 @@ try {
 export default Categories;
 
 
-{/* <div className="card">
+/* <div className="card">
         <Link className="link" to='/products/1' >
           <img src="/img/11.jpg" alt="" />
           <div className="des">
             <h4>Necklace</h4>
           </div>         
         </Link>
-        </div> */}
+        </div> */
 
         // <div className="categories">
         // <div className="card">

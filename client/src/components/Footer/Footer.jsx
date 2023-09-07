@@ -25,19 +25,21 @@ import { Link } from 'react-router-dom';
       </div>
       <h2>Opening Hours: <span>MONDAY TO SATURDAY</span></h2>
       <h2>Call: <span>+91 9054046469</span></h2>
-      <h2>Email: <span>medivyapatel27@gmail.com</span></h2>
+      <h2>Email: <span>PatelJewelers@gmail.com</span></h2>
         </div> 
+        <Link to='/privacypolicy' >
+          <h4 className="policy">
+          Privacy policy
+          </h4>
+          </Link>
       </div>
+      
       <div className="bottom">
       <span className="logo">PatelJewellers</span>
           <span className="copyright">
             © Copyright 2023. All Rights Reserved
           </span>
-          <Link to='/privacypolicy' target="_blank">
-          <h4 className="policy">
-          Privacy policy
-          </h4>
-          </Link>
+         
        
       </div>
     </div>

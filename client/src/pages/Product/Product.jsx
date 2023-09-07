@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./Product.scss";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
@@ -16,9 +16,18 @@ const Product = () => {
   const id = useParams().id;
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantity, setQuantity] = useState(1);
+  
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
 
   const dispatch = useDispatch();
   const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
+  console.log(data);
  
   return (
     <div>
@@ -81,6 +90,7 @@ const Product = () => {
                     desc: data.attributes.desc,
                     weight: data.attributes.weight,
                     img: data.attributes.img.data.attributes.url,
+                    price: data.attributes.price,
                     quantity,
                   })
                 )

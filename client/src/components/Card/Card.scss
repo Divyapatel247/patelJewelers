@@ -69,6 +69,7 @@
         text-align: start;
         padding: 10px 0;
         gap: 3px;
+        width: 100%;
         span{
             color: #606063;
             font-size: 12px;
@@ -82,14 +83,15 @@
         .info{
           display: flex;
           gap: 5px;
-          background-color: #9f394b;
+          width: 100%;
+          // background-color: #9f394b;
           border-radius: 10px;
           h4{
             margin-top: 5px;
-            padding: 5px;
+            // padding: 5px;
             font-size: 15px;
             font-weight: 700;
-            color: #ffc0cb;
+            color: #173b76;
         }
         }
     }

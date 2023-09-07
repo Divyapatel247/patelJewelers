@@ -35,7 +35,7 @@ import { useSelector } from 'react-redux';
       </div>
       <div className="menu">
       <div className='right' ref={navRef} >
-      <div className="menuIcon closeIcon " >
+          <div className="menuIcon closeIcon " >
           <CloseIcon onClick={showNavbar}/>
           </div>
           <div className="item" onClick={showNavbar}>
@@ -45,7 +45,7 @@ import { useSelector } from 'react-redux';
              <Link className='link' to='/products'>Products</Link>
           </div>
           <div className="item" onClick={showNavbar}>
-             <Link className='link' to='/product/:id'>Catalogs</Link>
+             <Link className='link'>Catalogs</Link>
           </div>
           <div className="item" onClick={showNavbar}>
              <Link className='link' to='/contact'>Contact</Link>

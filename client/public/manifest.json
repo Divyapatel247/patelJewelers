@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Patel Jewelers App",
+  "name": "Jewellery shop by Patel Jewelers",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "/img/logopj.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "230x216"
     },
     {
       "src": "logo512.png",

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from '../../components/Slider/Slider'
 import Categories from '../../components/Categories/Categories'
 import "./Home.scss"
@@ -10,6 +10,14 @@ import Contactus from '../../components/Contactus/Contactus'
 import Whatsapp from '../../components/Whatsapp/Whatsapp'
 
 const Home = () => {
+  
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
   return (
     <div className='home'>
       <Landing/>

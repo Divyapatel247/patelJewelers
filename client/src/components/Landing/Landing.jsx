@@ -4,6 +4,15 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 
 const Landing = () => {
   const [showPopup, setShowPopup] = useState(false);
+   
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  };
+  
  
 
   useEffect(() => {
@@ -15,6 +24,7 @@ const Landing = () => {
     if (!popupShown) {
       // If the popup has not been shown before, show it
       setShowPopup(true);
+     
       // Mark the popup as shown to prevent it from showing again
       localStorage.setItem('popupShown',true);
     }
